@@ -174,7 +174,7 @@ and V are in [0, 255]."
    `(erc-header-face
     ( (t (:foreground ,foreground :background ,alt-background))))
    `(erc-input-face ((t (:foreground ,green))))
-   `(erc-keyword-face ((t (:inherit ,foreground-low-1))))
+   `(erc-keyword-face ((t (:foreground ,foreground-low-1))))
    `(erc-current-nick-face ((t (:foreground ,green))))
    `(erc-my-nick-face ((t (:foreground ,green))))
    `(erc-nick-default-face ((t (:weight normal :foreground ,purple))))
