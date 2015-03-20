@@ -79,6 +79,7 @@ and V are in [0, 255]."
    `(error ((t (:foreground ,red))))
    `(warning ((t (:foreground ,orange))))
    `(success ((t (:foreground ,green))))
+   `(trailing-whitespace ((t (:background ,red :foregound ,white))))
    ;; button
    `(button ((t (:underline t))))
    ;; isearch
@@ -187,6 +188,8 @@ and V are in [0, 255]."
    `(magit-branch ((t (:inherit outline-1))))
    `(magit-diff-add ((t (:inherit success))))
    `(magit-diff-del ((t (:inherit error))))
+   `(magit-log-sha1 ((t (:foreground ,foreground-low-3))))
+   `(magit-log-message ((t (:foreground ,foreground))))
    `(magit-item-highlight ((t (:background ,background-high-0))))
    `(magit-section-title ((t (:inherit outline-2))))
    ;; slime
