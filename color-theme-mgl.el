@@ -86,6 +86,8 @@ and V are in [0, 255]."
    `(isearch ((t (:inherit warning :background ,background-high-2 :bold t))))
    `(isearch-fail ((t (:background ,red :foreground ,white))))
    `(lazy-highlight ((t (:inherit default :background ,background-high-2))))
+   ;; replace
+   `(match ((t (:inherit minibuffer-prompt))))
    ;; font-lock
    `(font-lock-builtin-face ((t (:foreground ,2nd-foreground))))
    `(font-lock-comment-face ((t (:slant italic :foreground ,foreground-low-3))))
