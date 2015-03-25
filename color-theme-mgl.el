@@ -180,7 +180,8 @@ and V are in [0, 255]."
    `(erc-keyword-face ((t (:foreground ,foreground-low-1))))
    `(erc-current-nick-face ((t (:foreground ,green))))
    `(erc-my-nick-face ((t (:foreground ,green))))
-   `(erc-nick-default-face ((t (:weight normal :foreground ,purple))))
+   ;; This conflicts with the nick coloring hack.
+   ;; `(erc-nick-default-face ((t (:weight normal :foreground ,purple))))
    `(erc-nick-msg-face ((t (:weight normal :foreground ,foreground-low-2))))
    `(erc-notice-face ((t (:foreground ,foreground-low-3))))
    `(erc-pal-face ((t (:inherit warning))))
