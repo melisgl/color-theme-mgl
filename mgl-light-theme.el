@@ -8,7 +8,7 @@
       (background-high-0     (mgl-hsv-to-html  36  10 235))
       (background-high-1     (mgl-hsv-to-html  36  20 216))
       (background-high-2     (mgl-hsv-to-html  36  40 204))
-      (alt-background        (mgl-hsv-to-html   0  0  180))
+      (alt-background        (mgl-hsv-to-html   0  0  150))
       (foreground-low-3      (mgl-hsv-to-html  36 120  88))
       (foreground-low-2      (mgl-hsv-to-html  36 150 100))
       (foreground-low-1      (mgl-hsv-to-html  36 200 150))
