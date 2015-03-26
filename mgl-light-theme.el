@@ -3,6 +3,7 @@
                       '("c" "")))
 (deftheme mgl-light
   "A light background theme.")
+
 (let ((background-low        (mgl-hsv-to-html  36   0 255))
       (background            (mgl-hsv-to-html  36   5 250))
       (background-high-0     (mgl-hsv-to-html  36  10 235))

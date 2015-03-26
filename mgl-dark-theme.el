@@ -3,6 +3,7 @@
                       '("c" "")))
 (deftheme mgl-dark
   "A dark background theme.")
+
 (let ((background-low        (mgl-hsv-to-html   0   0  12))
       (background            (mgl-hsv-to-html   0   0  19))
       (background-high-0     (mgl-hsv-to-html   0   0  34))
@@ -25,4 +26,5 @@
       (purple                "purple")
       (white                 "white"))
   (color-theme-mgl 'mgl-dark))
+
 (provide-theme 'mgl-dark)
