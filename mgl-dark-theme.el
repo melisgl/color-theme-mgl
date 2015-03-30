@@ -19,6 +19,7 @@
       (2nd-foreground        (mgl-hsv-to-html 216  40 240))
       (2nd-foreground-high-1 (mgl-hsv-to-html 216  20 255))
       (3rd-foreground        (mgl-hsv-to-html  70 136 188))
+      (dead                  (mgl-hsv-to-html   0   0 128))
       (red                   (mgl-hsv-to-html   0 162 205))
       (orange                (mgl-hsv-to-html  24 255 255))
       (green                 (mgl-hsv-to-html  70 136 188))

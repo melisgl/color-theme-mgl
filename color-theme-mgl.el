@@ -72,7 +72,7 @@ and V are in [0, 255]."
    `(mode-line
      ((t (:background ,background-low :foreground ,foreground-low-3))))
    `(mode-line-inactive
-     ((t (:background ,alt-background :foreground ,background-low))))
+     ((t (:background ,dead :foreground ,background-low))))
    `(fringe ((t (:background ,background))))
    `(minibuffer-prompt ((t (:foreground ,orange :weight bold))))
    `(cursor ((t (:background ,foreground :foreground ,background))))
@@ -149,7 +149,7 @@ and V are in [0, 255]."
    `(gnus-summary-stripe ((t (:background ,background-high-0))))
    `(gnus-summary-normal-ticked ((t (:inherit error))))
    `(gnus-button ((t (:inherit outline-2))))
-   `(spam ((t (:inherit outline-3))))
+   `(spam ((t (:foreground ,dead))))
    `(gnus-cite-1 ((t (:inherit outline-1))))
    `(gnus-cite-2 ((t (:inherit outline-2))))
    `(gnus-cite-3 ((t (:inherit outline-3))))
