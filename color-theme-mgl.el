@@ -162,7 +162,8 @@ and V are in [0, 255]."
    `(gnus-cite-10 ((t (:inherit outline-2))))
    `(gnus-cite-11 ((t (:inherit outline-3))))
    ;; gnus-notify
-   `(gnus-notify-mode-line-face ((t (:inherit outline-4))))
+   `(gnus-notify-mode-line-face
+     ((t (:foreground ,2nd-foreground-high-1 :weight bold))))
    ;; message
    `(message-header-to ((t (:inherit outline-1))))
    `(message-header-cc ((t (:inherit outline-2))))
