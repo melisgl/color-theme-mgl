@@ -70,9 +70,10 @@ and V are in [0, 255]."
    `(region ((t (:background ,background-high-1))))
    `(secondary-selection ((t (:background ,background-high-0))))
    `(mode-line
-     ((t (:background ,background-low :foreground ,foreground-low-3))))
+     ((t (:background ,background-high-0 :foreground ,foreground-low-3
+                      :box nil))))
    `(mode-line-inactive
-     ((t (:background ,dead :foreground ,background-low))))
+     ((t (:background ,background-high-0 :foreground ,dead :box nil))))
    `(fringe ((t (:background ,background))))
    `(minibuffer-prompt ((t (:foreground ,orange :weight bold))))
    `(cursor ((t (:background ,foreground :foreground ,background))))
@@ -80,6 +81,8 @@ and V are in [0, 255]."
    `(warning ((t (:foreground ,orange))))
    `(success ((t (:foreground ,green))))
    `(trailing-whitespace ((t (:background ,red :foregound ,white))))
+   `(whitespace-line
+     ((t (:background ,background-high-0 :foregound ,foreground))))
    ;; button
    `(button ((t (:underline t))))
    ;; isearch
@@ -111,6 +114,7 @@ and V are in [0, 255]."
    `(outline-7 ((t (:inherit outline-2))))
    `(outline-8 ((t (:inherit outline-3))))
    ;; org
+   `(org-hide ((t (:foreground ,background))))
    `(org-level-1 ((t (:inherit outline-1))))
    `(org-level-2 ((t (:inherit outline-2))))
    `(org-level-3 ((t (:inherit outline-3))))
@@ -176,7 +180,7 @@ and V are in [0, 255]."
    `(erc-direct-msg-face ((t (:foreground ,orange))))
    `(erc-error-face ((t (:foreground ,red))))
    `(erc-header-face
-    ( (t (:foreground ,foreground :background ,alt-background))))
+     ((t (:foreground ,foreground :background ,alt-background))))
    `(erc-input-face ((t (:foreground ,green))))
    `(erc-keyword-face ((t (:foreground ,foreground-low-1))))
    `(erc-current-nick-face ((t (:foreground ,green))))
@@ -190,8 +194,15 @@ and V are in [0, 255]."
    `(erc-timestamp-face ((t (:foreground ,2nd-foreground))))
    ;; magit
    `(magit-branch ((t (:inherit outline-1))))
-   `(magit-diff-add ((t (:inherit success))))
-   `(magit-diff-del ((t (:inherit error))))
+   `(magit-diff-added-highlight
+     ((t (:background ,background-high-0 :foreground ,green :weight bold))))
+   `(magit-diff-removed-highlight
+     ((t (:background ,background-high-0 :foreground ,red :weight bold))))
+   `(magit-diff-added
+     ((t (:background ,background-low :foreground ,green :weight bold))))
+   `(magit-diff-removed
+     ((t (:background ,background-low :foreground ,red :weight bold))))
+   `(magit-diff-context-highlight ((t (:foreground ,foreground-high-1))))
    `(magit-log-sha1 ((t (:foreground ,foreground-low-3))))
    `(magit-log-message ((t (:foreground ,foreground))))
    `(magit-item-highlight ((t (:background ,background-high-0))))
