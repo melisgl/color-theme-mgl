@@ -211,7 +211,9 @@ and V are in [0, 255]."
    `(sldb-topline-face ((t (:inherit error))))
    `(sldb-condition-face ((t (:inherit error))))
    `(sldb-restartable-frame-line-face ((t (:inherit success))))
-   `(slime-repl-inputed-output-face ((t (:inherit outline-1))))))
+   `(slime-repl-inputed-output-face ((t (:inherit outline-1))))
+   ;; markdown
+   `(markdown-code-face ((t (:background ,background-high-0))))))
 
 (provide 'color-theme-mgl)
 
