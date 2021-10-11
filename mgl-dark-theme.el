@@ -1,6 +1,6 @@
 (require 'color-theme-mgl
-         (locate-file "color-theme-mgl.el" custom-theme-load-path
-                      '("c" "")))
+         (concat (file-name-directory load-file-name) "color-theme-mgl.el"))
+
 (deftheme mgl-dark
   "A dark background theme.")
 
