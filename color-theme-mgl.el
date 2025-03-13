@@ -192,12 +192,16 @@ and V are in [0, 255]."
    `(erc-pal-face ((t (:inherit warning))))
    `(erc-prompt-face ((t (:foreground ,2nd-foreground-low-1))))
    `(erc-timestamp-face ((t (:foreground ,2nd-foreground))))
-   ;; magit
+   ;; magit and diff
    `(magit-branch ((t (:inherit outline-1))))
    `(magit-diff-added-highlight
      ((t (:background ,background-high-0 :foreground ,green :weight bold))))
+   `(diff-refine-added
+     ((t (:background ,green-high-3 :foreground ,green-low-1 :weight bold))))
    `(magit-diff-removed-highlight
      ((t (:background ,background-high-0 :foreground ,red :weight bold))))
+   `(diff-refine-removed
+     ((t (:background ,red-high-3 :foreground ,red-low-1 :weight bold))))
    `(magit-diff-added
      ((t (:background ,background-low :foreground ,green :weight bold))))
    `(magit-diff-removed
