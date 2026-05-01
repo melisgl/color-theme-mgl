@@ -24,6 +24,8 @@
 ;;
 ;; Requirements: Emacs 24.
 
+(require 'outline)
+
 (unless (>= emacs-major-version 24)
   (error "color-theme-mgl requires Emacs 24 or later."))
 
