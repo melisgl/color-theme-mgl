@@ -128,11 +128,13 @@ and V are in [0, 255]."
    `(org-link ((t (:inherit outline-5 :underline t))))
    ;; gnus
    `(gnus-group-mail-1 ((t (:inherit outline-1 :bold t))))
-   `(gnus-group-mail-1-empty ((t (:inherit outline-3))))
+   `(gnus-group-mail-1-empty ((t (:inherit outline-1))))
    `(gnus-group-mail-2 ((t (:inherit outline-2 :bold t))))
-   `(gnus-group-mail-2-empty ((t (:inherit outline-3))))
+   `(gnus-group-mail-2-empty ((t (:inherit outline-2))))
    `(gnus-group-mail-3 ((t (:inherit outline-3 :bold t))))
    `(gnus-group-mail-3-empty ((t (:inherit outline-3))))
+   `(gnus-group-mail-low ((t (:inherit outline-4 :bold t))))
+   `(gnus-group-mail-low-empty ((t (:inherit outline-4))))
    `(gnus-group-news-1 ((t (:foreground nil :inherit gnus-group-mail-1))))
    `(gnus-group-news-1-empty
      ((t (:foreground nil :inherit gnus-group-mail-1-empty))))
@@ -142,6 +144,9 @@ and V are in [0, 255]."
    `(gnus-group-news-3 ((t (:foreground nil :inherit gnus-group-mail-3))))
    `(gnus-group-news-3-empty
      ((t (:foreground nil :inherit gnus-group-mail-3-empty))))
+   `(gnus-group-news-4 ((t (:foreground nil :inherit gnus-group-mail-low))))
+   `(gnus-group-news-4-empty
+     ((t (:foreground nil :inherit gnus-group-mail-low-empty))))
    `(gnus-header-name ((t (:inherit outline-4))))
    `(gnus-header-subject ((t (:inherit outline-1))))
    `(gnus-header-from ((t (:inherit outline-4))))
